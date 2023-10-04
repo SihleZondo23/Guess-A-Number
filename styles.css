@@ -1,0 +1,54 @@
+:root {
+    --background-color-light: #f0f0f0;
+    --background-color-dark: #112957;
+    --text-color-light: #333;
+    --text-color-dark: #f0f0f0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+h1 {
+    color: inherit;
+}
+
+p {
+    font-size: 18px;
+    color: inherit;
+}
+
+#message {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#inputBox {
+    font-size: 16px;
+    padding: 5px;
+}
+
+#submit {
+    font-size: 16px;
+    padding: 5px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+    transform: translateY(10px);
+}
+
